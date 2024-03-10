@@ -192,44 +192,4 @@ let name:String? = readLine()
 
 print("Your favorite programming language is \(name!).")
 
-// Swift - Closures
-// Teach me about closure
-// A closure is a self-contained block of code that can be passed around and used in your code.
-// Closures are similar to functions, but they are defined in a more compact and flexible way.
-// Closures are used to capture and store references to any constants and variables from the context in which they are defined.
-
-// Syntax
-// { (parameters) -> returnType in
-//     // code to be executed
-// }
-
-// Example
-let greetUser = {
-    print("Hello, User!")
-}
-
-
-// what is the difference between closure and function
-// The main difference between a closure and a function is that a closure is defined in a more compact and flexible way.
-
-
-func processNumber () {
-    let add = {
-        (number1:Int, number2:Int) -> Int in
-        return number1 + number2
-    }
-}
-
-
-func processNumber1 () {
-    let add = {
-        (number1:Int, number2:Int) -> Int in
-        return number1 + number2
-    }
-    let result = add(10, 20)
-    print("The result is \(result)")
-}
-
-processNumber1()
-
 
