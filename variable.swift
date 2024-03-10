@@ -223,7 +223,7 @@ func processNumber () {
 
 func processNumber1 () {
     let add = {
-        (_ number1:Int, number2:Int) -> Int in
+        (number1:Int, number2:Int) -> Int in
         return number1 + number2
     }
     let result = add(10, 20)
@@ -231,3 +231,5 @@ func processNumber1 () {
 }
 
 processNumber1()
+
+
