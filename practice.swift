@@ -1,5 +1,10 @@
 import Foundation
 
+enum AttendentType {
+    case present
+    case absent
+}
+
 struct Student {
     let name: String
     var attendance: [Date: Bool]
@@ -13,7 +18,7 @@ class AttendanceManager {
     }
 
     func markAttendance(for studentName: String, on date: Date, attended: Bool) {
-        if let index = students.firstIndex(where: { $0.name == studentName }) {
+        if let index: Array<Student>.Index = students.firstIndex(where: { $0.name == studentName }) {
             students[index].attendance[date] = attended
         }
     }
@@ -24,9 +29,14 @@ class AttendanceManager {
 }
 
 // Usage
-let students = [Student(name: "John Doe", attendance: [:]), Student(name: "Jane Doe", attendance: [:])]
-let manager = AttendanceManager(students: students)
+var students: [Student]
+students = [
+    Student(name: "John Doe", attendance: [:]),
+    Student(name: "Jonh Stone", attendance: [:])
+]
+let manager: AttendanceManager = AttendanceManager(students: students)
 
-let today = Date()
+let today: Date = Date()
 manager.markAttendance(for: "John Doe", on: today, attended: true)
-print(manager.getAttendance(for: "John Doe", on: today)) // Optional(true)
+print(manager.getAttendance(for: "John Doe", on: today) ?? "No record")
+

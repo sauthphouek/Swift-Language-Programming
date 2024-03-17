@@ -15,28 +15,28 @@
 
 /// struct person 
 
-struct Person {
-    var name: String
-    var age: Int
+// struct Person {
+//     var name: String
+//     var age: Int
     
-    init?(name: String, age: Int) {
-        if age < 0 {
-            return nil
-        }
-        self.name = name
-        self.age = age
-    }
+//     init?(name: String, age: Int) {
+//         if age < 0 {
+//             return nil
+//         }
+//         self.name = name
+//         self.age = age
+//     }
 
-    // What is init?
-    // The init method is a special method that is called when a new instance of the structure is created.
-}
+//     // What is init?
+//     // The init method is a special method that is called when a new instance of the structure is created.
+// }
 
-// create an instance of the Person structure
-if let person1 = Person(name: "John", age: 30) {
-    print("The person's name is \(person1.name) and their age is \(person1.age).")
-} else {
-    print("The age is invalid.")
-}
+// // create an instance of the Person structure
+// if let person1 = Person(name: "John", age: 30) {
+//     print("The person's name is \(person1.name) and their age is \(person1.age).")
+// } else {
+//     print("The age is invalid.")
+// }
 
 
 // Required initializer in Swift
@@ -47,7 +47,7 @@ if let person1 = Person(name: "John", age: 30) {
 // Syntax
 // class SomeClass {
 //     required init() {
-//         // initialization code
+//         // initialization code 
 //     }
 // }
 
@@ -83,3 +83,42 @@ print(car1.color) // red
 // The required keyword is used to indicate that the init method must be implemented by all subclasses of the class.
 // In this example, the Car class has a required initializer that is called when a new instance of the class is created.
 // The required initializer is called when a new instance of the class is created, and it is used to initialize the properties of the class.
+
+
+// deinitialize 
+
+class Person {
+    var name:String
+    var age:Int 
+    var address:String
+    required init (name: String, age: Int, address: String ) {
+        self.name = name
+        self.age = age 
+        self.address = address
+        print("init")
+    }
+
+    convenience init (name:String ) {
+        self.init(name: name, age: 0, address: "")
+        print("convenience Init")
+    }
+
+    deinit {
+        print("Deinit object \(name)")
+    }
+}
+
+var person: Person? = Person(name: "Test")
+person = nil 
+
+var person1 : Person = Person(name: "Test1")
+
+person = Person(name: "Test2")
+
+
+
+class Student: Person {
+    init()
+}
+
+var student: Person = Person() 

@@ -11,7 +11,7 @@
 //     // properties and methods
 // }
 
-// Example
+// Example : Super class name : Vehicle
 class Vehicle {
     var numberOfWheels: Int
     var color: String
@@ -40,6 +40,10 @@ class Vehicle {
     }
 }
 
+// Example : Sub class name : Car 
+// Describe the subclass Car
+// The Car class is a subclass of the Vehicle class. 
+// It has an additional property called brand, and it overrides the drive method of the Vehicle class.
 class Car: Vehicle {
     var brand: String
     
@@ -59,3 +63,4 @@ car1.drive() // The car is driving.
 print(car1.numberOfWheels) // 4
 print(car1.color) // red
 print(car1.brand) // Toyota
+
