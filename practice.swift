@@ -40,3 +40,5 @@ let today: Date = Date()
 manager.markAttendance(for: "John Doe", on: today, attended: true)
 print(manager.getAttendance(for: "John Doe", on: today) ?? "No record")
 
+
+
