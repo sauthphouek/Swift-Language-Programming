@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Scroll_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4l-b3-gJy">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elY-sQ-y6T">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="495.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WcO-dZ-PUT">
+                                                <rect key="frame" x="16" y="33.000000000000007" width="361" height="118.66666666666669"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="qPL-4i-1To"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to your Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBG-RO-jpC">
+                                                <rect key="frame" x="24" y="168" width="345" height="28.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gI8-FC-i7k">
+                                                <rect key="frame" x="24" y="252.66666666666669" width="345" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oW7-VQ-whS">
+                                                <rect key="frame" x="24" y="318.66666666666669" width="345" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Ib-he0">
+                                                <rect key="frame" x="24" y="412.66666666666669" width="345" height="43"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gI8-FC-i7k" firstAttribute="top" secondItem="eBG-RO-jpC" secondAttribute="bottom" constant="56.000000000000028" id="1Xv-e1-8X7"/>
+                                            <constraint firstItem="eBG-RO-jpC" firstAttribute="leading" secondItem="elY-sQ-y6T" secondAttribute="leading" constant="24" id="2TN-q8-Knu"/>
+                                            <constraint firstItem="oW7-VQ-whS" firstAttribute="top" secondItem="gI8-FC-i7k" secondAttribute="bottom" constant="32" id="5B0-Hd-hNl"/>
+                                            <constraint firstItem="DXR-Ib-he0" firstAttribute="leading" secondItem="elY-sQ-y6T" secondAttribute="leading" constant="24" id="RDt-Hp-WdI"/>
+                                            <constraint firstItem="WcO-dZ-PUT" firstAttribute="top" secondItem="elY-sQ-y6T" secondAttribute="top" constant="32" id="SuO-Fd-jq5"/>
+                                            <constraint firstAttribute="trailing" secondItem="WcO-dZ-PUT" secondAttribute="trailing" constant="16" id="VHf-XS-LMY"/>
+                                            <constraint firstAttribute="trailing" secondItem="eBG-RO-jpC" secondAttribute="trailing" constant="24" id="Wou-tS-gbS"/>
+                                            <constraint firstItem="WcO-dZ-PUT" firstAttribute="centerX" secondItem="elY-sQ-y6T" secondAttribute="centerX" id="XPV-Gw-jiR"/>
+                                            <constraint firstItem="DXR-Ib-he0" firstAttribute="top" secondItem="oW7-VQ-whS" secondAttribute="bottom" constant="60" id="gXV-bX-afi"/>
+                                            <constraint firstItem="oW7-VQ-whS" firstAttribute="leading" secondItem="elY-sQ-y6T" secondAttribute="leading" constant="24" id="jXJ-qH-gRx"/>
+                                            <constraint firstItem="WcO-dZ-PUT" firstAttribute="leading" secondItem="elY-sQ-y6T" secondAttribute="leading" constant="16" id="jrx-jX-ME0"/>
+                                            <constraint firstAttribute="trailing" secondItem="DXR-Ib-he0" secondAttribute="trailing" constant="24" id="lVu-ki-4GP"/>
+                                            <constraint firstAttribute="trailing" secondItem="gI8-FC-i7k" secondAttribute="trailing" constant="24" id="lfs-eV-dn0"/>
+                                            <constraint firstAttribute="trailing" secondItem="oW7-VQ-whS" secondAttribute="trailing" constant="24" id="oBW-EB-nHF"/>
+                                            <constraint firstItem="eBG-RO-jpC" firstAttribute="top" secondItem="WcO-dZ-PUT" secondAttribute="bottom" constant="16" id="pYI-DN-jjz"/>
+                                            <constraint firstItem="gI8-FC-i7k" firstAttribute="leading" secondItem="elY-sQ-y6T" secondAttribute="leading" constant="24" id="txY-3h-4nR"/>
+                                            <constraint firstItem="WcO-dZ-PUT" firstAttribute="centerX" secondItem="elY-sQ-y6T" secondAttribute="centerX" id="y1q-he-IGG"/>
+                                            <constraint firstAttribute="bottom" secondItem="DXR-Ib-he0" secondAttribute="bottom" constant="40" id="ynY-js-BBQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="elY-sQ-y6T" secondAttribute="bottom" id="0a5-7S-AhM"/>
+                                    <constraint firstAttribute="trailing" secondItem="elY-sQ-y6T" secondAttribute="trailing" id="F45-jG-Nbf"/>
+                                    <constraint firstItem="elY-sQ-y6T" firstAttribute="leading" secondItem="e4l-b3-gJy" secondAttribute="leading" id="aGe-Cp-Dt4"/>
+                                    <constraint firstItem="elY-sQ-y6T" firstAttribute="top" secondItem="e4l-b3-gJy" secondAttribute="top" id="h2d-Ln-14U"/>
+                                    <constraint firstItem="elY-sQ-y6T" firstAttribute="width" secondItem="e4l-b3-gJy" secondAttribute="width" id="ryp-5u-8Qo"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e4l-b3-gJy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7R3-Wa-8eZ"/>
+                            <constraint firstItem="e4l-b3-gJy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G8b-Er-zc4"/>
+                            <constraint firstItem="e4l-b3-gJy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cUw-ns-hYr"/>
+                            <constraint firstItem="e4l-b3-gJy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hBE-Tc-IHX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="ynY-js-BBQ" id="zau-WK-3jh"/>
+                        <outlet property="buttonLogin" destination="DXR-Ib-he0" id="YBU-xj-ZE8"/>
+                        <outlet property="passwordTxt" destination="oW7-VQ-whS" id="irw-oD-ePc"/>
+                        <outlet property="phoneNumberTxt" destination="gI8-FC-i7k" id="eNY-Hk-6FV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479" y="-216"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paperplane.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

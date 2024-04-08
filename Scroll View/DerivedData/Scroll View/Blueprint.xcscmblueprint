@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A928DAC4AFF564626CB3342ED09453AE255DCA64",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A928DAC4AFF564626CB3342ED09453AE255DCA64" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BB0E2A0B-8756-48F5-802E-FB84FA9BEDAA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A928DAC4AFF564626CB3342ED09453AE255DCA64" : "Swift-Programming-Language\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Scroll View",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Scroll View\/Scroll View.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git@github.com:sauthphouek\/Swift-Programming-Language.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A928DAC4AFF564626CB3342ED09453AE255DCA64"
+    }
+  ]
+}
