@@ -1,0 +1,60 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "dddf6a49e8bc5c1be11ca2b3071c6fd6e20a1b8262ae9e7734047bc25dc86d94"
+    }
+  ],
+  "containerPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.4",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Build/Products",
+      "pchPath" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

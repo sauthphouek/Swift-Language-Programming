@@ -53,15 +53,10 @@ class ViewController: UIViewController {
         
         // post notification
 
-        NotificationCenter.default.addObserver(forName: Notification.Name.saveData, object: nil, queue: nil){
-            notification in
-            print(notification.userInfo)
-        }
-
-        
-        
-        
-        
+//        NotificationCenter.default.addObserver(forName: Notification.Name.saveData, object: nil, queue: nil){
+//            notification in
+//            print(notification.userInfo)
+//        }
     }
     
     @objc func removeKeyboard() {
@@ -98,15 +93,20 @@ class ViewController: UIViewController {
     
     // submit button handler
     @objc func handleLoginSubmit() {
-        if phoneNumberTxt.text?.isEmpty == true || passwordTxt.text?.isEmpty == true {
-            let alert = UIAlertController(title: "Field Requried", message: "Please fill all the required field", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default))
-            self.present(alert, animated: true)
-        }  else {
-
-            NotificationCenter.default.post(name: Notification.Name.saveData, object: nil, userInfo: ["userName": phoneNumberTxt, "password": passwordTxt])
-
-        }
+//        if phoneNumberTxt.text?.isEmpty == true || passwordTxt.text?.isEmpty == true {
+//            let alert = UIAlertController(title: "Field Requried", message: "Please fill all the required field", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+//            self.present(alert, animated: true)
+//        }  else {
+//
+////            NotificationCenter.default.post(name: Notification.Name.saveData, object: nil, userInfo: ["userName": phoneNumberTxt, "password": passwordTxt])
+//
+//        }
+        
+        let homeViewController = HomeViewController()
+        self.navigationController?.pushViewController(homeViewController, animated: true)
+        
+        print("Login")
     }
 
 }

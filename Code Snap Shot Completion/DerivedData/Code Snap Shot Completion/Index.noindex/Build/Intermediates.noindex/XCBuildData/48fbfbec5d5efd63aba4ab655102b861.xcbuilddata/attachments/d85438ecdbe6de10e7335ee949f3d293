@@ -1,0 +1,33 @@
+{
+  "" : {
+    "dependencies" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/Build/Intermediates.noindex/Code Snap Shot Completion.build/Debug-iphonesimulator/Code Snap Shot Completion.build/Objects-normal/arm64/Code Snap Shot Completion-master.d",
+    "diagnostics" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/Build/Intermediates.noindex/Code Snap Shot Completion.build/Debug-iphonesimulator/Code Snap Shot Completion.build/Objects-normal/arm64/Code Snap Shot Completion-master.dia",
+    "emit-module-dependencies" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/Build/Intermediates.noindex/Code Snap Shot Completion.build/Debug-iphonesimulator/Code Snap Shot Completion.build/Objects-normal/arm64/Code Snap Shot Completion-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/Build/Intermediates.noindex/Code Snap Shot Completion.build/Debug-iphonesimulator/Code Snap Shot Completion.build/Objects-normal/arm64/Code Snap Shot Completion-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sauth.p/Desktop/Code Snap Shot Completion/DerivedData/Code Snap Shot Completion/Index.noindex/Build/Intermediates.noindex/Code Snap Shot Completion.build/Debug-iphonesimulator/Code Snap Shot Completion.build/Objects-normal/arm64/Code Snap Shot Completion-master.swiftdeps"
+  },
+  "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion/Components/UIButton.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion/Components/UIImage.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion/Components/UILabel.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion/Components/UIText.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion/Components/UITextField.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion/Components/ViewController.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion/setup/SceneDelegateSetup.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/Code Snap Shot Completion/Code Snap Shot Completion/setup/SetupUI.swift" : {
+
+  }
+}
