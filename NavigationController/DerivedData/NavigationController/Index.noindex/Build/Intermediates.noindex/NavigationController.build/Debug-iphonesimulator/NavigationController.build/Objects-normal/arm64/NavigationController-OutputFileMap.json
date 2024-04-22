@@ -1,0 +1,24 @@
+{
+  "" : {
+    "dependencies" : "/Users/sauth.p/Desktop/NavigationController/DerivedData/NavigationController/Index.noindex/Build/Intermediates.noindex/NavigationController.build/Debug-iphonesimulator/NavigationController.build/Objects-normal/arm64/NavigationController-master.d",
+    "diagnostics" : "/Users/sauth.p/Desktop/NavigationController/DerivedData/NavigationController/Index.noindex/Build/Intermediates.noindex/NavigationController.build/Debug-iphonesimulator/NavigationController.build/Objects-normal/arm64/NavigationController-master.dia",
+    "emit-module-dependencies" : "/Users/sauth.p/Desktop/NavigationController/DerivedData/NavigationController/Index.noindex/Build/Intermediates.noindex/NavigationController.build/Debug-iphonesimulator/NavigationController.build/Objects-normal/arm64/NavigationController-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sauth.p/Desktop/NavigationController/DerivedData/NavigationController/Index.noindex/Build/Intermediates.noindex/NavigationController.build/Debug-iphonesimulator/NavigationController.build/Objects-normal/arm64/NavigationController-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sauth.p/Desktop/NavigationController/DerivedData/NavigationController/Index.noindex/Build/Intermediates.noindex/NavigationController.build/Debug-iphonesimulator/NavigationController.build/Objects-normal/arm64/NavigationController-master.swiftdeps"
+  },
+  "/Users/sauth.p/Desktop/NavigationController/DerivedData/NavigationController/Index.noindex/Build/Intermediates.noindex/NavigationController.build/Debug-iphonesimulator/NavigationController.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/NavigationController/NavigationController/AppDelegate.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/NavigationController/NavigationController/FirstViewController.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/NavigationController/NavigationController/SceneDelegate.swift" : {
+
+  },
+  "/Users/sauth.p/Desktop/NavigationController/NavigationController/ViewController.swift" : {
+
+  }
+}

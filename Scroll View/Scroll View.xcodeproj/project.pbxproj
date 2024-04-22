@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		467ABB172BD3B195004F2994 /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467ABB162BD3B195004F2994 /* AppExtension.swift */; };
 		46FBCF242BC23F9E009764A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FBCF232BC23F9E009764A5 /* AppDelegate.swift */; };
 		46FBCF262BC23F9E009764A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FBCF252BC23F9E009764A5 /* SceneDelegate.swift */; };
 		46FBCF282BC23F9E009764A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FBCF272BC23F9E009764A5 /* ViewController.swift */; };
@@ -16,7 +17,22 @@
 		46FBCF382BC24F18009764A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FBCF372BC24F18009764A5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		467ABB1A2BD3B291004F2994 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
+		467ABB162BD3B195004F2994 /* AppExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
 		46FBCF202BC23F9E009764A5 /* Scroll View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scroll View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FBCF232BC23F9E009764A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FBCF252BC23F9E009764A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		467ABB152BD3B162004F2994 /* My Extension */ = {
+			isa = PBXGroup;
+			children = (
+				467ABB162BD3B195004F2994 /* AppExtension.swift */,
+			);
+			path = "My Extension";
+			sourceTree = "<group>";
+		};
 		46FBCF172BC23F9E009764A5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +82,7 @@
 		46FBCF222BC23F9E009764A5 /* Scroll View */ = {
 			isa = PBXGroup;
 			children = (
+				467ABB152BD3B162004F2994 /* My Extension */,
 				46FBCF232BC23F9E009764A5 /* AppDelegate.swift */,
 				46FBCF252BC23F9E009764A5 /* SceneDelegate.swift */,
 				46FBCF272BC23F9E009764A5 /* ViewController.swift */,
@@ -80,8 +105,10 @@
 				46FBCF1C2BC23F9E009764A5 /* Sources */,
 				46FBCF1D2BC23F9E009764A5 /* Frameworks */,
 				46FBCF1E2BC23F9E009764A5 /* Resources */,
+				467ABB1B2BD3B413004F2994 /* Swiftformat */,
 			);
 			buildRules = (
+				467ABB1A2BD3B291004F2994 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -136,6 +163,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		467ABB1B2BD3B413004F2994 /* Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46FBCF1C2BC23F9E009764A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +192,7 @@
 				46FBCF282BC23F9E009764A5 /* ViewController.swift in Sources */,
 				46FBCF242BC23F9E009764A5 /* AppDelegate.swift in Sources */,
 				46FBCF262BC23F9E009764A5 /* SceneDelegate.swift in Sources */,
+				467ABB172BD3B195004F2994 /* AppExtension.swift in Sources */,
 				46FBCF382BC24F18009764A5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +350,7 @@
 				INFOPLIST_FILE = "Scroll View/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -329,6 +379,7 @@
 				INFOPLIST_FILE = "Scroll View/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
